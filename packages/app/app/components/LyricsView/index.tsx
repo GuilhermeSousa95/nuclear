@@ -2,9 +2,7 @@ import React from 'react';
 import _ from 'lodash';
 import { Icon } from 'semantic-ui-react';
 import { useTranslation } from 'react-i18next';
-
 import LyricsHeader from './LyricsHeader';
-
 import styles from './styles.scss';
 
 type LyricsViewProps = {

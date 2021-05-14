@@ -8,8 +8,8 @@ import { handleLoadableActionError, handleLoadableActionSuccess, loadingStateMet
 import { Loadable } from './types';
 
 export class MastodonStore {
-  appData?: Loadable<RegisterSuccessPayload> = { ...startingStateMeta };
-  tokenData?: Loadable<actions.GetAccessTokenPayload> = { ...startingStateMeta };
+  private appData?: Loadable<RegisterSuccessPayload> = { ...startingStateMeta };
+  private tokenData?: Loadable<actions.GetAccessTokenPayload> = { ...startingStateMeta };
 }
 
 const defaultState = { ...new MastodonStore() };

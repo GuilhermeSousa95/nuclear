@@ -22,18 +22,18 @@ export enum LocalLibraryKeyNames {
 }
 
 export class LocalLibraryState {
-  [LocalLibraryKeyNames.Pending] = false;
-  [LocalLibraryKeyNames.Error] = false;
-  [LocalLibraryKeyNames.Folders] = [];
-  [LocalLibraryKeyNames.Page] = 0;
-  [LocalLibraryKeyNames.SortBy] = 'artist';
-  [LocalLibraryKeyNames.Direction] = 'ascending';
-  [LocalLibraryKeyNames.Filter] = '';
-  [LocalLibraryKeyNames.ListType] = LIST_TYPE.SIMPLE_LIST;
-  [LocalLibraryKeyNames.Tracks] = [];
-  [LocalLibraryKeyNames.ExpandedFolders] = [];
-  [LocalLibraryKeyNames.ScanProgress] = 0;
-  [LocalLibraryKeyNames.ScanTotal] = 0;
+  private [LocalLibraryKeyNames.Pending] = false;
+  private [LocalLibraryKeyNames.Error] = false;
+  private [LocalLibraryKeyNames.Folders] = [];
+  private [LocalLibraryKeyNames.Page] = 0;
+  private [LocalLibraryKeyNames.SortBy] = 'artist';
+  private [LocalLibraryKeyNames.Direction] = 'ascending';
+  private [LocalLibraryKeyNames.Filter] = '';
+  private [LocalLibraryKeyNames.ListType] = LIST_TYPE.SIMPLE_LIST;
+  private [LocalLibraryKeyNames.Tracks] = [];
+  private [LocalLibraryKeyNames.ExpandedFolders] = [];
+  private [LocalLibraryKeyNames.ScanProgress] = 0;
+  private [LocalLibraryKeyNames.ScanTotal] = 0;
 }
 
 export const localLibraryActions = {
